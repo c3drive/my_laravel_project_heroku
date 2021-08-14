@@ -111,7 +111,7 @@ class BooksController extends Controller{
     }
     
     // 削除画面
-    public function delete(Book $books){
+    public function delete(Book $book){
         $book->delete();
         return redirect('/');
     }
