@@ -32,7 +32,7 @@ Route::post('/books/update', 'BooksController@update');
 * Laravelの機能で@method('DELETE')を定義すると擬似的にDELETEリクエストと見せかけることができ、web.phpとしてもdeleteで受け取れる
 * HTMLに展開されるコードは、<input xxx name=_method" value="DELETE">
 */
-Route::post('/book/{book}', 'BooksController@delete');
+Route::delete('/book/{book}', 'BooksController@delete');
 
 // Auth
 Auth::routes();
